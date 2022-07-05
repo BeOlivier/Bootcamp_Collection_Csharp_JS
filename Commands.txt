@@ -18,6 +18,20 @@ Password = Password_from_the_docker-compose.yml_file
 rest things :) = Default
 
 //////////
+USEFUL COMMANDS
+//////////
+
+NB!! To delete table i.e.:
+
+DROP TABLE dbo.ChosenTableName;
+
+To Alter a column:
+
+ALTER TABLE dbo.ChosenTableName
+ALTER COLUMN ColumnName TYPE(NewValue)
+
+
+//////////
 Create a new database called MovieWar
 //////////
     Create new query "Command + N"
@@ -37,9 +51,13 @@ Create a new database called MovieWar
         GO
     ´´´
     Then Refresh 
-//////////
+
+////////
 Create a table Customers with a Name, Email and PhoneNumber-field
-//////////
+////////
+
+Select NameOfDatabase not MASTER!!!
+
     CREATE TABLE dbo.Customers (
         CustomerId int NOT NULL PRIMARY KEY,
         Name NVARCHAR(50) NOT NULL,
@@ -47,6 +65,15 @@ Create a table Customers with a Name, Email and PhoneNumber-field
         PhoneNumber NVARCHAR(50) NOT NULL
     );
     GO
+
+CREATE TABLE dbo.MovieQuotes (
+    QuoteId int NOT NULL PRIMARY KEY,
+    Quote NVARCHAR(300),
+    Answer1 NVARCHAR(100),
+    Answer2 NVARCHAR(100),
+    Answer3 NVARCHAR(100)
+);
+GO
 
 //////////
 Create another table Address that holds StreetName, StreetNo, City and Country and a boolean called Primary
@@ -72,6 +99,14 @@ Create a foreign key from Address to Customer on the field Address.CustomerId
 //////////
 Populate the tables with some data, through INSERT-statements
 //////////
+
+    INSERT INTO dbo.MovieQuotes
+    ([QuoteId], [Quote], [Answer1], [Answer2], [Answer3])
+    VALUES
+    ( 1, N'Yippee-ki-yay motherfucker', N'Die Hard', N'Terminator', N'Winnie the Pooh'),
+    ( 2, N'The eagles are coming!', N'Lord of the Rings 3 - The return of the King', N'Harry Potter 3 - Prisoner of Azkaban', N'Star Wars I - The Phantom Menace'),
+    ( 3, N'I''m sorry, but I don''t want to be an emperor. That''s not my business. I don''t want to rule or conquer anyone. I should like to help everyone - if possible - Jew, Gentile - black man - white. We all want to help one another. Human beings are like that.', N'The Dictator', N'Spartacus', N'The Gladiator')
+
     INSERT INTO dbo.Customers
     ([CustomerId], [Name], [PhoneNumber], [Email])
     VALUES
