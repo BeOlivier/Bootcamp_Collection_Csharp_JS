@@ -1,0 +1,132 @@
+//////////
+Setting up DB:
+//////////
+1) Have a correct docker-compose.yml file
+2) Run this command in terminal to start the server silently
+    docker-compose up -d
+
+//////////
+Connecting to Azure Data Studio:
+//////////
+    Connection Type: 
+Microsoft SQL Server
+Server = localhost, 1433
+Auth type = SQL login
+user = sa
+Password = Password_from_the_docker-compose.yml_file
+
+rest things :) = Default
+
+//////////
+USEFUL COMMANDS
+//////////
+
+NB!! To delete table i.e.:
+
+DROP TABLE dbo.ChosenTableName;
+
+To Alter a column:
+
+ALTER TABLE dbo.ChosenTableName
+ALTER COLUMN ColumnName TYPE(NewValue)
+
+
+//////////
+Create a new database called MovieWar
+//////////
+    Create new query "Command + N"
+    Select master db
+    ´´´
+        USE master
+        GO
+        IF NOT EXISTS (
+        SELECT name
+        FROM sys.databases
+        WHERE name = N'NameOfDatabase'
+        )
+        CREATE DATABASE [NameOfDatabase];
+        GO
+        IF SERVERPROPERTY('ProductVersion') > '12'
+        ALTER DATABASE [NameOfDatabase] SET QUERY_STORE=ON;
+        GO
+    ´´´
+    Then Refresh 
+
+////////
+Create a table Customers with a Name, Email and PhoneNumber-field
+////////
+
+Select NameOfDatabase not MASTER!!!
+
+    CREATE TABLE dbo.Customers (
+        CustomerId int NOT NULL PRIMARY KEY,
+        Name NVARCHAR(50) NOT NULL,
+        Email NVARCHAR(50) NOT NULL,
+        PhoneNumber NVARCHAR(50) NOT NULL
+    );
+    GO
+
+CREATE TABLE dbo.MovieQuotes (
+    QuoteId int NOT NULL PRIMARY KEY,
+    Quote NVARCHAR(300),
+    Answer1 NVARCHAR(100),
+    Answer2 NVARCHAR(100),
+    Answer3 NVARCHAR(100)
+);
+GO
+
+//////////
+Create another table Address that holds StreetName, StreetNo, City and Country and a boolean called Primary
+//////////
+    CREATE TABLE dbo.Address (
+        AddressId int NOT NULL PRIMARY KEY,
+        StreetName NVARCHAR(50) NOT NULL,
+        StreetNo NVARCHAR(50) NOT NULL,
+        City NVARCHAR(50) NOT NULL,
+        Country NVARCHAR(50) NOT NULL,
+        AddressPrimary BIT NOT NULL DEFAULT 1
+    );
+    GO
+    
+//////////
+Create a foreign key from Address to Customer on the field Address.CustomerId
+//////////
+    ALTER TABLE dbo.Address
+    ADD CustomerId int
+        CONSTRAINT FK_CUSTOMER_ID
+        FOREIGN KEY (CustomerId) REFERENCES Customers(CustomerId);
+
+//////////
+Populate the tables with some data, through INSERT-statements
+//////////
+
+    INSERT INTO dbo.MovieQuotes
+    ([QuoteId], [Quote], [Answer1], [Answer2], [Answer3])
+    VALUES
+    ( 1, N'Yippee-ki-yay motherfucker', N'Die Hard', N'Terminator', N'Winnie the Pooh'),
+    ( 2, N'The eagles are coming!', N'Lord of the Rings 3 - The return of the King', N'Harry Potter 3 - Prisoner of Azkaban', N'Star Wars I - The Phantom Menace'),
+    ( 3, N'I''m sorry, but I don''t want to be an emperor. That''s not my business. I don''t want to rule or conquer anyone. I should like to help everyone - if possible - Jew, Gentile - black man - white. We all want to help one another. Human beings are like that.', N'The Dictator', N'Spartacus', N'The Gladiator')
+
+    INSERT INTO dbo.Customers
+    ([CustomerId], [Name], [PhoneNumber], [Email])
+    VALUES
+    ( 1, N'Ram', N'9999999999', N'ram@hotmail.com'),
+    ( 2, N'Sita', N'89888888', N'sita@charpcorner.com'),
+    ( 3, N'Hari', N'777777777', N'hari@gmail.com'),
+    ( 4, N'Geeta', N'66666666', N'geeta@hotmail.com'),
+    ( 5, N'Chiu', N'555555', N'chiu@hotmail.com')
+
+    INSERT INTO dbo.Address
+    ([AddressId], [StreetName], [StreetNo], [City], [Country], [AddressPrimary], [CustomerId])
+    VALUES
+    ( 1, N'Groove Street', N'2930', N'San Andreas', N'USA',0,1),
+    ( 2, N'Foray Street', N'30', N'San Andreas', N'USA',1,2),
+    ( 3, N'Dawn Street', N'290', N'San Andreas', N'USA',1,3),
+    ( 4, N'Night Street', N'3230', N'San Andreas', N'USA',0,4),
+    ( 5, N'DAy Street', N'2560', N'San Andreas', N'USA',0,5)
+
+//////////
+Run some queries with JOIN to get all addresses for a Customer
+//////////
+    SELECT * FROM dbo.Customers INNER JOIN dbo.Address ON
+    dbo.Address.CustomerId = dbo.Customers.CustomerId;
