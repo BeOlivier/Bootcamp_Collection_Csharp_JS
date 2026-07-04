@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MovieQuotes.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f59a3ebd539dabcee24301fc6f3f04f42181513")]
 [assembly: System.Reflection.AssemblyProductAttribute("MovieQuotes.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MovieQuotes.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

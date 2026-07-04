@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/saltdev/Desktop/salt/salt-labs/labs/week10/HackdayRepo/MovieQuotes.API/MovieQuotes.API.csproj": {}
+    "/Users/danae/Desktop/Oliver/Coding/Summer Development/Bootcamp_Collection_Csharp_JS/HackDayRepo/MovieQuotes.API/MovieQuotes.API.csproj": {}
   },
   "projects": {
-    "/Users/saltdev/Desktop/salt/salt-labs/labs/week10/HackdayRepo/MovieQuotes.API/MovieQuotes.API.csproj": {
+    "/Users/danae/Desktop/Oliver/Coding/Summer Development/Bootcamp_Collection_Csharp_JS/HackDayRepo/MovieQuotes.API/MovieQuotes.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/saltdev/Desktop/salt/salt-labs/labs/week10/HackdayRepo/MovieQuotes.API/MovieQuotes.API.csproj",
+        "projectUniqueName": "/Users/danae/Desktop/Oliver/Coding/Summer Development/Bootcamp_Collection_Csharp_JS/HackDayRepo/MovieQuotes.API/MovieQuotes.API.csproj",
         "projectName": "MovieQuotes.API",
-        "projectPath": "/Users/saltdev/Desktop/salt/salt-labs/labs/week10/HackdayRepo/MovieQuotes.API/MovieQuotes.API.csproj",
-        "packagesPath": "/Users/saltdev/.nuget/packages/",
-        "outputPath": "/Users/saltdev/Desktop/salt/salt-labs/labs/week10/HackdayRepo/MovieQuotes.API/obj/",
+        "projectPath": "/Users/danae/Desktop/Oliver/Coding/Summer Development/Bootcamp_Collection_Csharp_JS/HackDayRepo/MovieQuotes.API/MovieQuotes.API.csproj",
+        "packagesPath": "/Users/danae/.nuget/packages/",
+        "outputPath": "/Users/danae/Desktop/Oliver/Coding/Summer Development/Bootcamp_Collection_Csharp_JS/HackDayRepo/MovieQuotes.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/saltdev/.nuget/NuGet/NuGet.Config"
+          "/Users/danae/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -24,6 +24,7 @@
         },
         "frameworks": {
           "net6.0": {
+            "framework": "net6.0",
             "targetAlias": "net6.0",
             "projectReferences": {}
           }
@@ -32,10 +33,17 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net6.0": {
+          "framework": "net6.0",
           "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Design": {
@@ -63,10 +71,25 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-arm64",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -75,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.301/RuntimeIdentifierGraph.json"
         }
       }
     }
