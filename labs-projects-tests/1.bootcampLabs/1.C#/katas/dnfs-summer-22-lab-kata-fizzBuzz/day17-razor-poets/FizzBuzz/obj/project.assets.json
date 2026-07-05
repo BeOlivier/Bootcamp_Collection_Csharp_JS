@@ -1,0 +1,88 @@
+{
+  "version": 4,
+  "targets": {
+    "net5.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net5.0": []
+  },
+  "packageFolders": {
+    "/Users/danae/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/danae/Downloads/bootcamp-razor-poets-public/1.C#/katas/dnfs-summer-22-lab-kata-fizzBuzz/day17-razor-poets/FizzBuzz/FizzBuzz.csproj",
+      "projectName": "FizzBuzz",
+      "projectPath": "/Users/danae/Downloads/bootcamp-razor-poets-public/1.C#/katas/dnfs-summer-22-lab-kata-fizzBuzz/day17-razor-poets/FizzBuzz/FizzBuzz.csproj",
+      "packagesPath": "/Users/danae/.nuget/packages/",
+      "outputPath": "/Users/danae/Downloads/bootcamp-razor-poets-public/1.C#/katas/dnfs-summer-22-lab-kata-fizzBuzz/day17-razor-poets/FizzBuzz/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/danae/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "framework": "net5.0",
+          "targetAlias": "net5.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.300"
+    },
+    "frameworks": {
+      "net5.0": {
+        "framework": "net5.0",
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.osx-x64",
+            "version": "[5.0.17, 5.0.17]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.301/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

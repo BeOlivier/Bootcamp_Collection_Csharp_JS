@@ -1,0 +1,21 @@
+﻿@*@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>*@
+
+@model IEnumerable<MvCShop.Web.Models.Product>
+<h1>List of products</h1>
+<ul>
+@foreach (var product in Model) {
+    <li>
+        <img src="https://picsum.photos/seed/picsum/60?random" alt="There should be an image here" />
+        <a asp-action="ProductPage" asp-route-id="@product.Id">@product.Name</a> :
+        @product.Price
+        <td><a class="btn btn-primary" asp-action="ProductPage" asp-route-id="@product.Id">Details</a></td>
+    </li>
+            }
+</ul>

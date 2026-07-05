@@ -1,0 +1,25 @@
+body {
+    background-color: whitesmoke;
+}
+
+.buttons {
+    padding: 3px 6px;
+    border: solid 2px black;
+}
+
+.buttons a {
+    width: 24%;
+    justify-content: space-evenly;
+    display: inline-block;
+    border-right: solid black 2px;
+    text-align: center;
+    text-decoration: none;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}

@@ -1,0 +1,48 @@
+﻿@page
+@model Salt.Stars.Web.Pages.HeroPage
+
+@if (Model.HeroResponse == null)
+{
+   <h2>Hero not found</h2>
+   <small>@Model.ErrorMessage</small>
+}
+else
+{
+    ViewData["Title"] = $"Hero: {Model.HeroResponse.Hero.Name}";
+
+  <div class="text-center">
+      <h2 class="display-5" id="mainHeader">@Model.HeroResponse.Hero.Name</h2>
+  </div>
+
+  <div>
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>Name:</td>
+          <td>@Model.HeroResponse.Hero.Name</td>
+        </tr>
+        <tr>
+          <td>Weight:</td>
+          <td>@Model.HeroResponse.Hero.Weight</td>
+        </tr>
+        <tr>
+          <td>Height:</td>
+          <td>@Model.HeroResponse.Hero.Height</td>
+        </tr>
+        <tr>
+          <td>Birth Year:</td>
+          <td>@Model.HeroResponse.Hero.BirthYear</td>
+        </tr>
+        <tr>
+          <td>Star count:</td>
+          <td>
+            SHOW STARRATING HERE
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <span>Requested at @Model.HeroResponse.RequestedAt</span>
+    </div>
+  </div>
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "PKGuommkvOk=",
+  "success": true,
+  "projectFilePath": "/Users/danae/Downloads/bootcamp-razor-poets-public/1.C#/katas/dnfs-summer-22-lab-kata-fizzBuzz/day11-razor-poets/FizzBuzz.xUnit/FizzBuzz.xUnit/FizzBuzz.xUnit.csproj",
+  "expectedPackageFiles": [
+    "/Users/danae/.nuget/packages/microsoft.netcore.app.ref/5.0.0/microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "/Users/danae/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

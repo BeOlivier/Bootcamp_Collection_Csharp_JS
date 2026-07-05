@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jfrm9JXuowQ=",
+  "dgSpecHash": "Mxcio8LZ57g=",
   "success": true,
-  "projectFilePath": "/Users/danae/Desktop/Oliver/Coding/Summer Development/Bootcamp_Collection_Csharp_JS/HackDayRepo/MovieQuotes.API/MovieQuotes.API.csproj",
+  "projectFilePath": "/Users/danae/Desktop/Oliver/Coding/repos/bootcamp_collection_c-sharp_js/HackDayRepo/MovieQuotes.API/MovieQuotes.API.csproj",
   "expectedPackageFiles": [
     "/Users/danae/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/danae/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",

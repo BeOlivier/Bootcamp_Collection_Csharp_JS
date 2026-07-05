@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{BDD781BF-7318-4E9B-9596-0F7481EF1D32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaltEmployeeSystem", "SaltEmployeeSystem\SaltEmployeeSystem.csproj", "{2C3F5E82-89F7-4DF0-82C3-25EE50844C1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemTest", "SystemTest\SystemTest.csproj", "{F477045D-FA21-4E8B-9CC8-9CCD1429372A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDD781BF-7318-4E9B-9596-0F7481EF1D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDD781BF-7318-4E9B-9596-0F7481EF1D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDD781BF-7318-4E9B-9596-0F7481EF1D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDD781BF-7318-4E9B-9596-0F7481EF1D32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C3F5E82-89F7-4DF0-82C3-25EE50844C1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C3F5E82-89F7-4DF0-82C3-25EE50844C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C3F5E82-89F7-4DF0-82C3-25EE50844C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C3F5E82-89F7-4DF0-82C3-25EE50844C1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F477045D-FA21-4E8B-9CC8-9CCD1429372A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F477045D-FA21-4E8B-9CC8-9CCD1429372A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F477045D-FA21-4E8B-9CC8-9CCD1429372A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F477045D-FA21-4E8B-9CC8-9CCD1429372A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

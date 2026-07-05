@@ -1,0 +1,5 @@
+
+namespace MvCShop.Web.Data
+{
+
+}

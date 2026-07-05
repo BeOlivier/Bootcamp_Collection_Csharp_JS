@@ -1,0 +1,23 @@
+{
+  "name": "salt-jsfs-linting-demo",
+  "version": "1.0.0",
+  "description": "A barebones application with a ESLint setup configured with the </salt> configuration",
+  "main": "primefactors.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint '**/*.js'",
+    "lint-watch": "nodemon --exec 'npm run lint --silent'",
+    "test": "mocha ./tests.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint-config-salt": "^1.2.0",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.4"
+    
+  },
+  "dependencies": {
+    "chai": "^4.3.6"
+  }
+}

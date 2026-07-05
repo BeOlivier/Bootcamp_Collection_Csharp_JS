@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+.list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+:root {
+    counter-reset: checked-sum unchecked-sum;
+}
+ input[type="checkbox"] {
+     counter-increment: unchecked-sum;
+     order: 150;
+ }
+input[type="checkbox"]:checked {
+    counter-increment: checked-sum;
+    order: 250;
+}
+
+input[type="checkbox"] + label{
+    background: red;
+    order: 150;
+}
+
+input[type="checkbox"]:hover + label{
+    background: orange;
+    transform: scale(1.1);
+    order: 150;
+}
+input[type="checkbox"]:checked  + label{
+    background: green;
+    order: 250;
+}
+input[type="checkbox"]:checked:hover  + label{
+    background: green;
+    transform: none;
+    order: 250;
+}
+.h3-done{
+    order: 200;
+}
+.h3-pending{
+    order: 100;
+}
+ input {
+     visibility: hidden;
+ }
+label{
+    width: 45%;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.totalChecked::after{
+    content: counter(checked-sum) ;
+}
+.totalUnchecked::after{
+    content: counter(unchecked-sum) ;
+}
+
+.explode:hover {
+    transition: 3s;
+    transform: rotate(10800deg) scale(300) !important;
+}

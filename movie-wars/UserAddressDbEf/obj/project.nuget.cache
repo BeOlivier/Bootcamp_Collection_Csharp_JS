@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "54Zf3VsI8t4=",
+  "dgSpecHash": "iq7Dyx2gCuY=",
   "success": true,
-  "projectFilePath": "/Users/danae/Desktop/Oliver/Coding/Summer Development/movie-wars/UserAddressDbEf/UserAddressDbEf.csproj",
+  "projectFilePath": "/Users/danae/Desktop/Oliver/Coding/repos/bootcamp_collection_c-sharp_js/movie-wars/UserAddressDbEf/UserAddressDbEf.csproj",
   "expectedPackageFiles": [
     "/Users/danae/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/Users/danae/.nuget/packages/microsoft.data.sqlclient/2.1.4/microsoft.data.sqlclient.2.1.4.nupkg.sha512",

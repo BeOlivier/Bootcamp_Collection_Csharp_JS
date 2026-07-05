@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Jungle";
+    src: url("../Fonts/edosz.ttf") format("truetype");
+}
+
+body {
+    background-color: rgb(85,110,82);
+}
+
+article {
+    font-size: 11px;
+    color: #929222;
+    font-weight: 100;
+    
+}
+
+header {
+    font-family: 'Jungle', sans-serif;
+    color: #432300;
+    text-shadow: 
+    1px -5px 10px coral,
+    1px 5px 10px goldenrod; 
+    text-align: center;
+}
+
+img {
+    border: 1px solid #929222;
+}
+
+header p{
+    margin-top: -20px;
+}
+
+section {
+    font-family: "Garamond", serif;
+    font-size: smaller;
+}
+
+.thumb {
+    display: inline-block;
+}

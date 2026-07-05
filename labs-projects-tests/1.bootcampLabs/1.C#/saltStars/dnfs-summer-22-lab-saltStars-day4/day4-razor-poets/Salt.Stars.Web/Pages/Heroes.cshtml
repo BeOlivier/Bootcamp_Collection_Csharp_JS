@@ -1,0 +1,18 @@
+@page
+@model HeroesPage
+
+@if (Model.HeroesResponse == null)
+{
+   <h2>No list found</h2>
+   <small>@Model.ErrorMessage</small>
+}
+else
+{
+    @foreach (var item in Model.HeroesResponse.Heroes)
+    {
+        <p>@item.Name - @item.Height cm - @item.Mass kg - <a href=@Url.Page("Hero", new { id = @item.Id})>link</a> 
+        </p>
+        
+    }
+
+}

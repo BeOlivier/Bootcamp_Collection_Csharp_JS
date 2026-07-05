@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/danae/Desktop/Oliver/Coding/Summer Development/Bootcamp_Collection_Csharp_JS/HackDayRepo/MovieQuotes.API/MovieQuotes.API.csproj": {}
+    "/Users/danae/Desktop/Oliver/Coding/repos/bootcamp_collection_c-sharp_js/HackDayRepo/MovieQuotes.API/MovieQuotes.API.csproj": {}
   },
   "projects": {
-    "/Users/danae/Desktop/Oliver/Coding/Summer Development/Bootcamp_Collection_Csharp_JS/HackDayRepo/MovieQuotes.API/MovieQuotes.API.csproj": {
+    "/Users/danae/Desktop/Oliver/Coding/repos/bootcamp_collection_c-sharp_js/HackDayRepo/MovieQuotes.API/MovieQuotes.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/danae/Desktop/Oliver/Coding/Summer Development/Bootcamp_Collection_Csharp_JS/HackDayRepo/MovieQuotes.API/MovieQuotes.API.csproj",
+        "projectUniqueName": "/Users/danae/Desktop/Oliver/Coding/repos/bootcamp_collection_c-sharp_js/HackDayRepo/MovieQuotes.API/MovieQuotes.API.csproj",
         "projectName": "MovieQuotes.API",
-        "projectPath": "/Users/danae/Desktop/Oliver/Coding/Summer Development/Bootcamp_Collection_Csharp_JS/HackDayRepo/MovieQuotes.API/MovieQuotes.API.csproj",
+        "projectPath": "/Users/danae/Desktop/Oliver/Coding/repos/bootcamp_collection_c-sharp_js/HackDayRepo/MovieQuotes.API/MovieQuotes.API.csproj",
         "packagesPath": "/Users/danae/.nuget/packages/",
-        "outputPath": "/Users/danae/Desktop/Oliver/Coding/Summer Development/Bootcamp_Collection_Csharp_JS/HackDayRepo/MovieQuotes.API/obj/",
+        "outputPath": "/Users/danae/Desktop/Oliver/Coding/repos/bootcamp_collection_c-sharp_js/HackDayRepo/MovieQuotes.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/danae/.nuget/NuGet/NuGet.Config"

@@ -1,0 +1,5 @@
+﻿@model MvCShop.Web.Models.Product
+<img src="https://picsum.photos/200/300" alt="There should be an image here" />
+<p>@Model.Name : @Model.Price</p>
+<p>@Model.Description</p>
+<td><a class="btn btn-primary" asp-action="ProductAddedToCart" asp-route-id="@Model.Id">Add to cart</a></td>

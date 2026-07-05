@@ -1,0 +1,13 @@
+@page
+@model Salt.Stars.Web.Pages.PlanetPage
+
+@if (Model.PlanetResponse == null)
+{
+    <h2>Planet not found</h2>
+    <small>@Model.ErrorMessage</small>
+}
+else
+{
+    <h6>planetos</h6>
+}
+

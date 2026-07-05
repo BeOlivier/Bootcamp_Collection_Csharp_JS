@@ -1,0 +1,44 @@
+﻿@page
+@model Salt.Stars.Web.Pages.PlanetPage
+@{
+}
+
+@if (Model.PlanetResponse == null)
+{
+   <h2>Hero not found</h2>
+   <small>@Model.ErrorMessage</small>
+}
+else
+{
+  ViewData["Title"] = $"Planet: {Model.PlanetResponse.Planet.Name}";
+
+  <div class="text-center">
+      <h2 class="display-5" id="mainHeader">@Model.PlanetResponse.Planet.Name</h2>
+  </div>
+
+  <div>
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>Name:</td>
+                <td>@Model.PlanetResponse.Planet.Name</td>
+            </tr>
+            <tr>
+                <td>Population:</td>
+                <td>@Model.PlanetResponse.Planet.Population people</td>
+            </tr>
+            <tr>
+                <td>Diameter:</td>
+                <td>@Model.PlanetResponse.Planet.Diameter km</td>
+            </tr>
+            <tr>
+                <td>Gravity:</td>
+                <td>@Model.PlanetResponse.Planet.Gravity</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+      <span>Requested at @Model.PlanetResponse.RequestedAt</span>
+    </div>
+  </div>
+}

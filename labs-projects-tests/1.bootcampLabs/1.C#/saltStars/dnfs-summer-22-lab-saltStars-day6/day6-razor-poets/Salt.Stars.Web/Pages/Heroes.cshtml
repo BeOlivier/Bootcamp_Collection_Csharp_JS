@@ -1,0 +1,44 @@
+﻿@page
+@model Salt.Stars.Web.Pages.HeroesPage
+
+@if (Model.HeroesResponse == null)
+{
+   <h2>Hero not found</h2>
+   <small>@Model.ErrorMessage</small>
+}
+else
+{
+  ViewData["Title"] = "The heroes list";
+
+  <div class="text-center">
+      <h2 class="display-5" id="mainHeader">The Heroes list</h2>
+  </div>
+
+  <div>
+    <table class="table table-striped" id="heroesTable">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Height</th>
+        <th scope="col">Weight</th>
+        <th scope="col">Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      @foreach (var hero in Model.HeroesResponse.Heroes)
+      {
+      <tr>
+        <th scope="row">@hero.Name</th>
+        <td>@hero.Height</td>
+        <td>@hero.BirthYear</td>
+        <td><a class="btn btn-primary" asp-page="/Hero" asp-route-id="@hero.Id">Details</a></td>
+      </tr>
+      }
+    </tbody>
+  </table>
+    <div>
+      <span>Showing @Model.HeroesResponse.PageSize of @Model.HeroesResponse.Count heroes</span>
+    </div>
+  </div>
+
+}

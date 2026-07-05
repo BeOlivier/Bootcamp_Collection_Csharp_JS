@@ -1916,11 +1916,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/danae/Desktop/Oliver/Coding/Summer Development/movie-wars/UserAddressDbEf/UserAddressDbEf.csproj",
+      "projectUniqueName": "/Users/danae/Desktop/Oliver/Coding/repos/bootcamp_collection_c-sharp_js/movie-wars/UserAddressDbEf/UserAddressDbEf.csproj",
       "projectName": "UserAddressDbEf",
-      "projectPath": "/Users/danae/Desktop/Oliver/Coding/Summer Development/movie-wars/UserAddressDbEf/UserAddressDbEf.csproj",
+      "projectPath": "/Users/danae/Desktop/Oliver/Coding/repos/bootcamp_collection_c-sharp_js/movie-wars/UserAddressDbEf/UserAddressDbEf.csproj",
       "packagesPath": "/Users/danae/.nuget/packages/",
-      "outputPath": "/Users/danae/Desktop/Oliver/Coding/Summer Development/movie-wars/UserAddressDbEf/obj/",
+      "outputPath": "/Users/danae/Desktop/Oliver/Coding/repos/bootcamp_collection_c-sharp_js/movie-wars/UserAddressDbEf/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/danae/.nuget/NuGet/NuGet.Config"
